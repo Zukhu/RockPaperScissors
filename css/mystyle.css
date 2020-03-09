@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Lobster;
+    src: url("/css/fonts/Lobster_1.3.otf");
+  }
+
+html, body {
+    background-color: white;
+}
+
+#game-logo {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background-color: rgba(145, 203, 207, 0.1);
+}
+
+
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: "Lobster", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    top: 250px;
+    font-size: 40px;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-size: 70px;
+}
+
+#form-choice {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+#form-choice:active {
+    border:none;
+    outline: none;
+}
+
+#player-choice {
+    font-size: 50px;
+    width: 47%;
+    text-align: center;
+    border-radius: 30px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+#player-choice:hover {
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px 3px rgba(241, 241, 241, 1);
+}
+
+#submit-button {
+    position: relative;
+    right: 70px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: rgba(174, 174, 203, 0.7);
+}
+
+#submit-button:hover {
+    animation-name: anim-button;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes anim-button {
+    0% {
+      background-color: rgba(174, 174, 203, 0.7);;
+    }
+    100% {
+      background-color: rgba(69, 69, 108, 1);
+      color: white;
+    }
+  }
+
+#battle-container {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#player-image, #machine-image {
+    transform: scale(0.5);
+    margin: auto;
+}
+
+#vs-image {
+    transform: scale(0.15);
+    margin: auto;
+}
+
+
+#result {
+    background-color: orange;
+}
+
+footer {
+    position: fixed;
+    height: 5%;
+    background-color: rgb(240, 240, 240);
+    bottom: 0; left: 0; right: 0;
+    font-size: 20px;
+}
+
+small {
+    font-size: 30px;
+}
