@@ -14,7 +14,11 @@
             <h1>Rock-Paper-Scissors!</h1>
         </header>
         <h2 id="round-number">Round 1 (out of 3)...</h2>
-        <h3 id="count-number">0 - 0</h3>
+        <div id="count-container">
+            <span id="fight-count-player">0</span>
+            <span id="hyphen">-</span>
+            <span id="fight-count-machine">0</span>
+        </div>
         <form id="form-choice">
             <input type=text id="player-choice" placeholder="Type your choice here: (rock, paper or scissors)">
             <button id="submit-button" onclick="fightBegin(); return false;">OK</button>
@@ -24,7 +28,7 @@
             <img id="vs-image" src="/images/versus.png" alt="versus">
             <img id="machine-image" src="/images/question.png" alt="?">
         </div>
-        <img id="reset-button" src="/images/reset-button.png"></button>
+        <img id="reset-button" src="/images/reset-button.png" onclick="fightReset(); return false;"></img>
         <footer id="author-id">
             <small>Zukhu © 2020</small>
         </footer>
